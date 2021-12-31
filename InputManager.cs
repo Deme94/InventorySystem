@@ -15,8 +15,6 @@ public class InputManager : MonoBehaviour
 
     public bool Inventory { get; private set; }
 
-    public MeleeWeaponItem StoneHatchet; // BORRAR TEMPORAL
-
     // Update is called once per frame
     void Update()
     {
@@ -30,7 +28,5 @@ public class InputManager : MonoBehaviour
         Equip3 = Input.GetKeyDown(KeyCode.Alpha3);
 
         Inventory = Input.GetKeyDown(KeyCode.I);
-
-        if (Input.GetKeyDown(KeyCode.P)) FindObjectOfType<Inventory>().Add(StoneHatchet); // BORRAR TEMPORAL
     }
 }
